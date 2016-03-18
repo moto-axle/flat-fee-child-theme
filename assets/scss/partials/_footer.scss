@@ -1,0 +1,45 @@
+//Background and Widget titles
+footer#footer {
+    background: #666;
+    margin-top: 0;
+    font-weight: 200;
+    color: #fff;
+    .widget-title h3 {
+        margin-top: 0;
+        color: #fff;
+    }
+}
+
+//Margin bottom for widgets
+@media(min-width: 768px) {
+    .footer-widgets .widget-container {
+        margin-bottom: 2rem;
+    }
+}
+
+//Contact
+.contact-footer {
+    p {
+        display: inline-block;
+        color: #fff;
+        span {
+            font-size: 1.1em;
+            font-weight: 500;
+        }    
+    }
+    i {
+        font-size: 1.7em;
+        color: #fff;
+    }
+    .realtor-icon i {
+        margin: 0px 2rem;
+        color: #777;
+    }
+}
+
+// Footer Widgets
+.footer-widgets .footer-logos {
+    margin-bottom: 0;
+    font-size: 45px;
+    color: #fff;
+}

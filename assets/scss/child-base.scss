@@ -1,0 +1,16 @@
+/**
+ * Child-Base.scss
+ * This file loads all the styles we need for our theme.
+ *
+ * There should be no styles in this file, only @imports
+ */
+
+/* Import Parent Theme Base */
+@import "../../../hji-boulevard/assets/scss/base";
+
+@import "partials/header";
+@import "partials/body";
+@import "partials/footer";
+@import "partials/ridx";
+
+@import "partials/portal-lists";

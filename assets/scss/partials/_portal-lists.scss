@@ -1,0 +1,113 @@
+// State List Section
+// --------------------------------------------------
+
+
+// Data lists of states or cities across the network
+.portal-list {
+    font-size: 16px;
+
+    a {
+        font-weight: 500;
+    }
+
+    // needed because we're floating the .list-group-items as columns
+    .list-group {
+        overflow: hidden;
+    }
+
+    // override standard list-group-item styles
+    .list-group-item {
+        padding: 5px 15px;
+        border-radius: 0;
+        border: none;
+    }
+
+
+    @media(max-width: $screen-md) {
+        ul {
+           // text-align: center;
+        }
+    }
+}
+
+
+// we should make the states list stay in 2 columns
+// the state names are small enough to always fit in 2 columns
+.portal-list--states {
+    .list-group-item {
+       // @include make-xs-column(6);
+    }
+}
+
+
+// not needed currently but I left it in for future reference
+.portal-list--cities {
+    .list-group--columns {
+        column-count: $column-count-city;
+        column-gap: $column-gap;
+        -webkit-column-count: $column-count-city;
+        -webkit-column-gap: $column-gap;
+        -moz-column-count: $column-count-city;
+        -moz-column-gap: $column-gap;
+        @media screen and (min-width: $screen-sm-min) {
+            column-count: 2;
+            column-gap: 10px;
+            -webkit-column-count: 2;
+            -webkit-column-gap: 10px;
+            -moz-column-count: 2;
+            -moz-column-gap: 10px;
+        }
+        @media screen and (min-width: $screen-md-min) {
+            column-count: 3;
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+        }
+        @media screen and (min-width: $screen-lg-min) {
+            column-count: 4;
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+        }
+    }
+}
+
+
+// all list-group--columns should be universal
+.portal-list--states {
+    .list-group--columns {
+        column-count: $column-count-state;
+        column-gap: $column-gap;
+        -webkit-column-count: $column-count-state;
+        -webkit-column-gap: $column-gap;
+        -moz-column-count: $column-count-state;
+        -moz-column-gap: $column-gap;
+        @media (min-width: $screen-sm-min) {
+            column-count: 4;
+            column-gap: 10px;
+            -webkit-column-count: 4;
+            -webkit-column-gap: 10px;
+            -moz-column-count: 4;
+            -moz-column-gap: 10px;
+        }
+        @media screen and (min-width: $screen-lg-min) {
+            column-count: 6;
+            -webkit-column-count: 6;
+            -moz-column-count: 6;
+        }
+    }
+}
+
+
+// disabled links
+// (currently used for the state list and any states that aren't setup yet)
+.disabled-link {
+    color: $link-disabled-color;
+    pointer-events: none;
+}
+
+
+// portal list pagination
+// --------------------------------------------------
+.pagination li a {
+    border: 0;
+    border-radius: 0;
+}

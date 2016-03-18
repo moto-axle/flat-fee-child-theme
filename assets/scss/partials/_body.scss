@@ -1,0 +1,214 @@
+// Body Font
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+//Homepage Slider
+.homepage-slider {
+    position: absolute;
+    width: 100%;
+}
+
+//RevSlider
+.rev_slider_wrapper {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+}
+
+//space for slider links and height of primary container
+.home #primary {
+    height: 500px;
+    margin-top: 10rem;
+    @media(max-width: 768px) {
+        margin-top: 0;
+        height: 420px;
+    }
+    @media(max-width: 375px) {
+        height: 375px;
+    }
+    @media(max-width: 320px) {
+        height: 325px;
+    }
+}
+
+//Homepage CTA
+.homepage-cta {
+    margin-top: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+    @media(max-width: 768px) {
+        margin-top: 260px;
+    }
+    @media(max-width: 414px) {
+        margin-top: 230px;
+    }
+    @media(max-width: 375px) {
+        margin-top: 207px;
+    }
+    @media(max-width: 320px) {
+        margin-top: 177px;
+    }
+
+}
+
+//slider link background
+.slider-link,
+.slider-search {
+    @media(min-width: $screen-xs-max) {
+        background: rgba(44, 173, 3, 0.2);
+    }
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    min-height: 50px;
+    border: 1px solid #ccc;
+}
+
+//Slider Link
+.slider-link {
+    margin-right: 1rem;
+    @media(max-width: 991px) {
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+    .inner-link {
+        margin-top: 10px;
+    }
+    span {
+        color: #fff;
+        font-size: 24px;
+        display: block;
+    }
+    .inner-link a {
+        color: #fff;
+        padding: 7px 30px;
+        line-height: 30px;
+        text-decoration: none;
+        @media(max-width: 414px) {
+            font-size: 17px;
+        }
+        @media(max-width: 991px) {
+            line-height: 0;
+            padding: 0;
+        }
+        @media(max-width: 767px) {
+            color: #fff;
+        }
+    }
+    &:hover {
+        background: rgba(44, 173, 3, 0.5);
+        a {
+            color: #fff;
+        }
+    }
+}
+
+//Slider Search
+.slider-search {
+    @extend .slider-link;
+    .selectize-control {
+        float: left;
+    }
+    .selectize-input {
+        border: none;
+        background: transparent;
+        input {
+            color: #fff;
+        }
+    }
+    .selectize-dropdown {
+        border: none;
+        background: rgba(0, 0, 0, 0.4);
+        box-shadow: none;
+        text-align: left;
+    }
+    .selectize-dropdown-content {
+        max-height: 500px;
+        background: rgba(0, 0, 0, 0.75);
+        color: #fff;
+        border: none;
+    }
+    .inner-search {
+        margin-top: 9px;
+    }
+    .selectize-control.single .selectize-input.input-active {
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+// Used to change selective placeholder font and color
+.selectize-input {
+    input[type="text"] {
+        text-align: center;
+        width: 100% !important;
+    }
+    input[type="text"]::-webkit-input-placeholder {
+        color: #fff;
+        opacity: 1;
+        font-size: 24px;
+        @media(max-width: 414px) {
+            font-size: 17px;
+        }
+    }
+    input[type="text"]:-moz-placeholder {
+        color: #fff;
+        opacity: 1;
+        font-size: 24px;
+        width: 100%;
+        @media(max-width: 414px) {
+            font-size: 17px;
+        }
+    }
+    input[type="text"]::-moz-placeholder {
+        color: #fff;
+        opacity: 1;
+        font-size: 24px;
+        width: 100%;
+        @media(max-width: 414px) {
+            font-size: 17px;
+        }
+    }
+    input[type="text"]:-ms-input-placeholder {
+        color: #fff;
+        opacity: 1;
+        font-size: 24px;
+        width: 100%;
+        @media(max-width: 414px) {
+            font-size: 17px;
+        }
+    }
+}
+
+// State List widget title
+.state-list-container .widget-title {
+    text-decoration: underline;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+
+//Cities List Section
+.blvd-cities-widgets {
+    min-height: 550px;
+}
+
+//For Sale By Owner
+.fsbo {
+    background: #000;
+    .widget-title {
+        color: #fff;
+        text-align: center;
+    }
+}
+.blvd-fsbo {
+    min-height: 400px;
+    .nearby-states .widget-title,
+    .biggest-counties .widget-title {
+        color: #65BF11;
+        text-align: left;
+    }
+}
